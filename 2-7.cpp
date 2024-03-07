@@ -1,4 +1,5 @@
-void InsertElem(SqList*& L, int elem) {
+bool InsertElem(SqList*& L, int elem) {
+
     for (int i = L->length; i > 0; i--) {
         if (L->data[i - 1] <= elem) {
             L->data[i] = elem;
@@ -12,4 +13,5 @@ void InsertElem(SqList*& L, int elem) {
         L->data[0] = elem;
     }
     L->length++;
+	return true;
 }
