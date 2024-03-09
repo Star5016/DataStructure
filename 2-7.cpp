@@ -19,5 +19,6 @@ bool InsertElem(SqList*& L, int elem) {
 	return true;
 }
 
+
 // Written By Yuxing Liu
 // Date : 2024.03.09
